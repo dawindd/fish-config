@@ -1,53 +1,34 @@
-# Basics
-set -g background 1a1b26
-set -g foreground c0caf5
-set -g selection 33467c
+# TokyoNight Color Palette
+    set -l foreground c0caf5
+    set -l selection 33467c
+    set -l comment 565f89
+    set -l red f7768e
+    set -l orange ff9e64
+    set -l yellow e0af68
+    set -l green 9ece6a
+    set -l purple 9d7cd8
+    set -l cyan 7dcfff
+    set -l pink bb9af7
 
-# Normal
-set -g color0 15161e
-set -g color1 f7768e
-set -g color2 9ece6a
-set -g color3 e0af68
-set -g color4 7aa2f7
-set -g color5 bb9af7
-set -g color6 7dcfff
-set -g color7 a9b1d6
+    # Syntax Highlighting Colors
+    set -g fish_color_normal $foreground
+    set -g fish_color_command $cyan
+    set -g fish_color_keyword $pink
+    set -g fish_color_quote $yellow
+    set -g fish_color_redirection $foreground
+    set -g fish_color_end $orange
+    set -g fish_color_error $red
+    set -g fish_color_param $purple
+    set -g fish_color_comment $comment
+    set -g fish_color_selection --background=$selection
+    set -g fish_color_search_match --background=$selection
+    set -g fish_color_operator $green
+    set -g fish_color_escape $pink
+    set -g fish_color_autosuggestion $comment
 
-# Bright
-set -g color8 414868
-set -g color9 db4b4b
-set -g color10 9ece6a
-set -g color11 ff9e64
-set -g color12 7aa2f7
-set -g color13 9d7cd8
-set -g color14 73daca
-set -g color15 c0caf5
-
-# Syntax Highlighting
-set -g fish_color_autosuggestion $color3
-set -g fish_color_command $color2
-set -g fish_color_comment $color4
-set -g fish_color_cwd $color4
-set -g fish_color_cwd_root $color5
-set -g fish_color_end $color16
-set -g fish_color_error $color1
-set -g fish_color_escape $color5
-set -g fish_color_history_current --bold
-set -g fish_color_host $foreground
-set -g fish_color_keyword $color5
-set -g fish_color_normal $foreground
-set -g fish_color_operator $color2
-set -g fish_color_param $color13
-set -g fish_color_quote $color4
-set -g fish_color_redirection $foreground
-set -g fish_color_user $color10
-set -g fish_color_valid_path --underline
-
-# Completion Pager Colors
-set -g fish_color_match --background=$color2
-set -g fish_color_search_match --background=$selection
-set -g fish_color_selection --background=$selection
-set -g fish_pager_color_completion $foreground
-set -g fish_pager_color_description $color8
-set -g fish_pager_color_prefix $color6 --bold --underline
-set -g fish_pager_color_progress $color8 --background=$color6
+    # Completion Pager Colors
+    set -g fish_pager_color_progress $comment
+    set -g fish_pager_color_prefix $cyan
+    set -g fish_pager_color_completion $foreground
+    set -g fish_pager_color_description $comment
+    set -g fish_pager_color_selected_background --background=$selection
