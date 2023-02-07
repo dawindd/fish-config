@@ -43,6 +43,7 @@ abbr -ag nctl networkctl
 abbr -ag rctl resolvectl
 abbr -ag ip ip --color=auto
 abbr -ag pm podman
+abbr -ag pmc podman-compose
 
 # Git
 abbr -ag g git
