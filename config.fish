@@ -103,6 +103,6 @@ if status is-interactive
     abbr -ag eik edit-in-kitty --type os-window
     abbr -ag rgk kitty +kitten hyperlinked_grep
     # Theming
-    source $HOME/.config/fish/tokyonight.fish
+    source $HOME/.config/fish/themes/tokyonight.fish
     starship init fish | source
 end
