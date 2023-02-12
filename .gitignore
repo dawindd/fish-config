@@ -1,1 +1,3 @@
 fish_variables
+functions/_*
+functions/fzf*
