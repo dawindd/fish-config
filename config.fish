@@ -32,10 +32,10 @@ abbr -ag c clear
 abbr -ag la lse -a
 abbr -ag ll lse -l
 abbr -ag lal lse -al
-abbr -ag tree lse --tree
-abbr -ag atree lse -a -I .git --tree
-abbr -ag ltree lse -l --tree
-abbr -ag altree lse -a -I .git -l --tree
+abbr -ag t lse --tree
+abbr -ag at lse -a -I .git --tree
+abbr -ag lt lse -l --tree
+abbr -ag alt lse -a -I .git -l --tree
 
 # System management
 abbr -ag bctl bluetoothctl
