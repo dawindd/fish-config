@@ -47,6 +47,7 @@ abbr -ag pmc podman-compose
 
 # Git
 abbr -ag g git
+abbr -ag h hub
 
 # Fzf
 if command -q fzf
